@@ -15,19 +15,19 @@ var utils={
 	//查询方法（包含模糊查询）
 	search:function(opts){
 		
-//		var url = "json/list.json"
-//		$.ajax({
-//			type:"get",
-//			url:url,
-//			async:true,
-//			success: function(data) {
-//				
-//				
-//				var tpl = $('#tpl-list').html();
-//				console.log(tpl);
-//				template(tpl, data);
-//			}
-//		});
+		var url = "json/list.json"
+		$.ajax({
+			type:"get",
+			url:url,
+			async:true,
+			success: function(data) {
+				
+				
+				var tpl = $('#tpl-list').html();
+				console.log(tpl);
+				template(tpl, data);
+			}
+		});
 	},
 	//新增和修改方法（合并为同一个）
 	update:function(opts){

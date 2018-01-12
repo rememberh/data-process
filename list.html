@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/list.css" />
+		<link rel="stylesheet" href="css/list.css" type="text/css"/>
 	</head>
 	<body>
 		<div class="wrap">
@@ -37,111 +37,85 @@
 			</div>
 	
 	
-	<table class="wrap-bd" border="1">
-				<tbody><tr>
-					<th><input type="checkbox" id="allChoose"></th>
-					<th>姓名</th>
-					<th>年龄</th>
-					<th>性别</th>
-					<th>籍贯</th>
-					<th>身份证号码</th>
-					<th>手机号码</th>
-					<th>职业</th>
-					<th>操作</th>
-				</tr>
-
-	<tr>
-		<td><input type="checkbox" class="choose"></td>
-		<td>张三</td>
-		<td>18</td>
-		<td> 
-			 
-				男
-			
+			<table class="wrap-bd" border="1">
+				<tbody>
+					<tr>
+						<th><input type="checkbox" id="allChoose"></th>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>性别</th>
+						<th>籍贯</th>
+						<th>身份证号码</th>
+						<th>手机号码</th>
+						<th>职业</th>
+						<th>操作</th>
+					</tr>
 		
-			
+					<tr>
+						<td><input type="checkbox" class="choose"></td>
+						<td>张三</td>
+						<td>18</td>
+						<td>男</td>
+						<td>汉族</td>
+						<td>430123456789101112</td>
+						<td>12345678910</td>
+						<td>学生</td>
+						<td>
+						<button id="updateBtn" type="button">修改</button>
+						<button id="delBtn" type="button">删除</button>
+						</td>		
+					</tr>
 		
-		</td>
-		<td>汉族</td>
-		<td>430123456789101112</td>
-		<td>12345678910</td>
-		<td>学生</td>
-		<td>
-			<button id="updateBtn" type="button">修改</button>
-			<button id="delBtn" type="button">删除</button>
-		</td>		
-	</tr>
-
-	<tr>
-		<td><input type="checkbox" class="choose"></td>
-		<td>李四</td>
-		<td>22</td>
-		<td> 
-			
+					<tr>
+						<td><input type="checkbox" class="choose"></td>
+						<td>李四</td>
+						<td>22</td>
+						<td>女</td>
+						<td>白族</td>
+						<td>430123456789101112</td>
+						<td>12345678910</td>
+						<td>工人</td>
+						<td>
+							<button id="updateBtn" type="button">修改</button>
+							<button id="delBtn" type="button">删除</button>
+						</td>		
+					</tr>
 		
-			 
-				女
-			
+					<tr>
+						<td><input type="checkbox" class="choose"></td>
+						<td>王五</td>
+						<td>28</td>
+						<td>男</td>
+						<td>苗族</td>
+						<td>430123456789101112</td>
+						<td>12345678910</td>
+						<td>企业家</td>
+						<td>
+							<button id="updateBtn" type="button">修改</button>
+							<button id="delBtn" type="button">删除</button>
+						</td>		
+					</tr>
 		
-		</td>
-		<td>白族</td>
-		<td>430123456789101112</td>
-		<td>12345678910</td>
-		<td>工人</td>
-		<td>
-			<button id="updateBtn" type="button">修改</button>
-			<button id="delBtn" type="button">删除</button>
-		</td>		
-	</tr>
-
-	<tr>
-		<td><input type="checkbox" class="choose"></td>
-		<td>王五</td>
-		<td>28</td>
-		<td> 
-			 
-				男
-			
+					<tr>
+						<td><input type="checkbox" class="choose"></td>
+						<td>赵六</td>
+						<td>24</td>
+						<td>女</td>
+						<td>土家族</td>
+						<td>430123456789101112</td>
+						<td>12345678910</td>
+						<td>主持人</td>
+						<td>
+							<button id="updateBtn" type="button">修改</button>
+							<button id="delBtn" type="button">删除</button>
+						</td>		
+					</tr>
 		
-			
-		
-		</td>
-		<td>苗族</td>
-		<td>430123456789101112</td>
-		<td>12345678910</td>
-		<td>企业家</td>
-		<td>
-			<button id="updateBtn" type="button">修改</button>
-			<button id="delBtn" type="button">删除</button>
-		</td>		
-	</tr>
-
-	<tr>
-		<td><input type="checkbox" class="choose"></td>
-		<td>赵六</td>
-		<td>24</td>
-		<td> 
-			
-		
-			 
-				女
-			
-		
-		</td>
-		<td>土家族</td>
-		<td>430123456789101112</td>
-		<td>12345678910</td>
-		<td>主持人</td>
-		<td>
-			<button id="updateBtn" type="button">修改</button>
-			<button id="delBtn" type="button">删除</button>
-		</td>		
-	</tr>
-
-			</tbody>
+				</tbody>
 			</table>	
+		</div>
+		<div id="zengjia">
 			
-				
 		</div>
 		<script type="text/html" id="addHtml">
 			<form>
@@ -196,7 +170,46 @@
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="js/template.js" ></script>
 		<script type="text/javascript" src="js/box.js" ></script>
-		<script type="text/javascript" src="js/utils.js" ></script>
-		<script type="text/javascript" src="js/list.js" ></script>
+		<!--<script type="text/javascript" src="js/utils.js" ></script>
+		<script type="text/javascript" src="js/list.js" ></script>-->
+		
 	</body>
 </html>
+<script type="text/javascript">		
+	var zengjia=document.getElementById('addHtml').innerHTML
+	$("#zengjia").html(zengjia)
+	
+	$("#addBtn").click(function(){
+		$("#zengjia").css("display","block")
+	})
+	
+	$("tbody tr:eq(1) button:eq(1)").click(function(){
+//		console.log("haha")
+		$("tbody tr:eq(1) button:eq(0)").parent().parent().remove()
+	})
+	$("tbody tr:eq(2) button:eq(1)").click(function(){
+//		console.log("haha")
+		$("tbody tr:eq(2) button:eq(0)").parent().parent().remove()
+	})
+	$("tbody tr:eq(3) button:eq(1)").click(function(){
+//		console.log("haha")
+		$("tbody tr:eq(3) button:eq(0)").parent().parent().remove()
+	})
+	$("tbody tr:eq(4) button:eq(1)").click(function(){
+//		console.log("haha")
+		$("tbody tr:eq(4) button:eq(0)").parent().parent().remove()
+	})
+	$("#allChoose").click(function(){
+		var quanxuan=$(this).prop("checked");
+		$(".wrap-bd tr td input:checkbox").prop("checked",quanxuan)
+	})
+	$(".wrap-bd tr td input").click(function(){
+		var xuanzhong=$(".wrap-bd tr td input:checked").length
+		var meixuan=$(".wrap-bd tr td input:checkbox").length
+		if(xuanzhong==meixuan){
+			$("#allChoose").prop("checked",true)
+		}else{
+			$("#allChoose").prop("checked",false)
+		}
+	})
+</script>

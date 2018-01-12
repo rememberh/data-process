@@ -1,7 +1,7 @@
 $(function(){
 	var $body=$('body');
 	
-	utils.search();
+	    utils.search();
 	
 	$body.on('click','#addBtn',function(){
 		utils.update();

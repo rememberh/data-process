@@ -145,3 +145,12 @@
 .box .box-bd .item-btn .canelBtn{
 	float: right;
 }
+#zengjia{
+	width: 300px; 
+	height: 400px; 
+	background: #ccc; 
+	position: absolute;
+	left: 400px;
+	top: 100px;
+	display: none;
+}
